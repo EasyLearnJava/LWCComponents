@@ -1,10 +1,11 @@
-import { LightningElement } from "lwc";
+import { LightningElement, api } from "lwc";
 
 export default class DataBinding extends LightningElement {
-  randomValue = "Lightning Web Components!";
+  @api randomvalue = "Lightning Web Components!";
+  message = "Welcome message from Child";
 
   handleChange(event){
-    this.randomValue = event.target.value;
-    console.log('Value entered : ' + this.randomValue);
+    this.randomvalue = event.target.value;
+    console.log('Value entered : ' + this.randomvalue);
   }
 }

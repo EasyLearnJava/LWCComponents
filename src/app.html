@@ -1,5 +1,7 @@
 <template>
 	<div class="app slds-p-around_x-large">
-		<c-Data-Binding></c-Data-Binding>
+		<!-- attribute is rename from randomValue to randomvalue -->
+		<!-- LWC1055: randomValue="Welcome mesage from Parent" is not valid attribute for c-data-binding. All attributes name should be all lowercase. -->
+		<c-Data-Binding randomvalue="Welcome message from Parent"></c-Data-Binding>
 	</div>
 </template>
